@@ -1,8 +1,13 @@
 body {
   background-color: #fcfcfd;
   font-family: "Montserrat", sans-serif;
+  color: #e9e9e9;
 }
 
+.content .header {
+  background-image: url(../img/Header/background/back.jpg);
+  background-repeat: no-repeat;
+}
 .content .header .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,11 +48,11 @@ body {
 .content .header .header__menu .header__menu_link .header__menu_list .list .link {
   font-weight: 600;
   font-size: 18px;
-  color: #111;
+  color: white;
   opacity: 0.8;
 }
 .content .header .header__menu .header__menu_link .header__menu_list .list .link:hover {
-  border-bottom: 2px solid #111;
+  border-bottom: 2px solid white;
   opacity: 1;
 }
 .content .header .header__menu .header__menu_networks {
@@ -81,7 +86,7 @@ body {
   height: 40px;
 }
 .content .header .header__content {
-  margin-top: 100px;
+  padding: 160px 0 140px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,7 +103,7 @@ body {
   font-weight: 600;
 }
 .content .header .header__content .header__content-description .header__content_text {
-  margin-top: 30px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,7 +116,7 @@ body {
   line-height: 20px;
 }
 .content .header .header__content .header__content-description .header__content_buttons {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .content .header .header__content .header__content-description .header__content_buttons .header__content-button {
   width: 300px;
