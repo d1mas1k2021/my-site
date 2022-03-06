@@ -85,6 +85,10 @@ body {
   width: 40px;
   height: 40px;
 }
+.content .header .header__menu .header__menu_networks .header__menu_net .header__menu_link-img:hover {
+  background-color: #fcfcfd;
+  border-radius: 33%;
+}
 .content .header .header__content {
   padding: 160px 0 140px 0;
   display: -webkit-box;
@@ -124,4 +128,9 @@ body {
   background-color: #111;
   color: #fcfcfd;
   font-size: 14px;
+  -webkit-transition: outline 1s;
+  transition: outline 1s;
+}
+.content .header .header__content .header__content-description .header__content_buttons .header__content-button:hover {
+  outline: 1px solid #fcfcfd;
 }
