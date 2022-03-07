@@ -11,6 +11,7 @@ body {
         background-image: url(../img/Header/background/background.webp);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         .header__menu {
             display: flex;
             justify-content: space-evenly;
@@ -55,22 +56,31 @@ body {
                 }
             }
             .header__menu_networks {
-                max-width: 170px;
+                max-width: 160px;
                 display: flex;
                 justify-content: space-between;
-                flex: 1 1 170px;
+                
                 .header__menu_net {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    
                     .header__menu_link-img {
                         img {
                             width: 26px;
                         }
                         
                     }
+                    .tel {
+                        padding-left: 10px;
+                    }
+                    .inst {
+                        padding-left: 10px;
+                    }
+                    .wk {
+                        padding-left: 10px;
+                    }
                    
                 }
+                
             }
         }
         .header__content {
@@ -89,7 +99,7 @@ body {
                     display: flex;
                     justify-content: center;
                     .header__content_desc {
-                        width: 520px;
+                        max-width: 520px;
                         line-height: 20px;
 
                     }
@@ -106,7 +116,8 @@ body {
                         font-weight: 500;
                         background-image: url(../img/Header/vector/arrow.png);
                         background-repeat: no-repeat;
-                        background-position: 201px 19px;
+                        background-position: 191px 19px;
+                        padding-right: 15px;
                         &:hover {
                             
                         }
@@ -119,7 +130,16 @@ body {
     }
     
 }
-@media (max-width:  520px) {
-   
-    
+
+@media (max-width:  535px) {
+    .header__menu_link-img  {
+        display: none;
+        
+    }
+    .header__menu_link-img  img {
+        display: none;
+    }
+    .header__menu_link {
+        margin-left: 15px;  
+    }
 }

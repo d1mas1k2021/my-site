@@ -7,6 +7,7 @@ body {
   background-image: url(../img/Header/background/background.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .content .header .header__menu {
   display: -webkit-box;
@@ -56,30 +57,30 @@ body {
   opacity: 1;
 }
 .content .header .header__menu .header__menu_networks {
-  max-width: 170px;
+  max-width: 160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 170px;
-          flex: 1 1 170px;
 }
 .content .header .header__menu .header__menu_networks .header__menu_net {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .content .header .header__menu .header__menu_networks .header__menu_net .header__menu_link-img img {
   width: 26px;
+}
+.content .header .header__menu .header__menu_networks .header__menu_net .tel {
+  padding-left: 10px;
+}
+.content .header .header__menu .header__menu_networks .header__menu_net .inst {
+  padding-left: 10px;
+}
+.content .header .header__menu .header__menu_networks .header__menu_net .wk {
+  padding-left: 10px;
 }
 .content .header .header__content {
   padding: 166px 0 140px 0;
@@ -108,7 +109,7 @@ body {
           justify-content: center;
 }
 .content .header .header__content .header__content-description .header__content_text .header__content_desc {
-  width: 520px;
+  max-width: 520px;
   line-height: 20px;
 }
 .content .header .header__content .header__content-description .header__content_buttons {
@@ -124,5 +125,19 @@ body {
   font-weight: 500;
   background-image: url(../img/Header/vector/arrow.png);
   background-repeat: no-repeat;
-  background-position: 201px 19px;
+  background-position: 191px 19px;
+  padding-right: 15px;
+}
+@media (max-width: 535px) {
+  .header__menu_link-img {
+    display: none;
+  }
+
+  .header__menu_link-img img {
+    display: none;
+  }
+
+  .header__menu_link {
+    margin-left: 15px;
+  }
 }
