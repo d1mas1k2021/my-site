@@ -1,6 +1,5 @@
 body {
   font-family: "Montserrat", sans-serif;
-  color: #fcfcfd;
 }
 
 .content .header {
@@ -25,6 +24,7 @@ body {
   font-size: 19px;
   font-weight: 500;
   text-transform: uppercase;
+  color: #fcfcfd;
 }
 .content .header .header__menu .header__menu_logo .logo span {
   font-size: 24px;
@@ -83,13 +83,14 @@ body {
   padding-left: 10px;
 }
 .content .header .header__content {
-  padding: 166px 0 140px 0;
+  padding: 166px 0 160px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  color: #fcfcfd;
 }
 .content .header .header__content .header__content-description {
   max-width: 700px;
@@ -139,5 +140,105 @@ body {
 
   .header__menu_link {
     margin-left: 15px;
+  }
+}
+.information .info__title {
+  padding: 100px 0 70px 0;
+}
+.information .info__title .info__log {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+.information .info-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.information .info-description .info__description {
+  max-width: 570px;
+}
+.information .info-description .info__description .info__description_title .info__description_log {
+  font-size: 24px;
+  font-weight: 600;
+}
+.information .info-description .info__description .info__text {
+  margin-top: 60px;
+}
+.information .info-description .info__description .info__text .text {
+  font-size: 17px;
+}
+.information .info-description .info__description .info__text .marg {
+  margin-top: 35px;
+}
+.information .info-description .info__description .info__skils .info__skils_title {
+  margin-top: 60px;
+}
+.information .info-description .info__description .info__skils .info__skils_title .info__skils_log {
+  font-size: 24px;
+  font-weight: 600;
+}
+.information .info-description .info__description .info__skils .info__skils_lang {
+  margin-top: 60px;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 370px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang {
+  font-size: 16px;
+  position: relative;
+  padding-left: 13px;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.orange::before {
+  background-color: orange;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.blue::before {
+  background-color: blue;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.purple::before {
+  background-color: purple;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.green::before {
+  background-color: green;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.pink::before {
+  background-color: #fca1b0;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.yellow::before {
+  background-color: #ffda06;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang.blue-1::before {
+  background-color: #46a3fa;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .info__lang_list .info__skils_li-lang::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 3px;
+  left: 0px;
+  border-radius: 50px;
+}
+.information .info-description .info__description .info__skils .info__skils_lang .width {
+  max-width: 300px;
+  margin-top: 20px;
+}
+@media (max-width: 1025px) {
+  .info__img img {
+    margin-top: 30px;
   }
 }

@@ -1,7 +1,7 @@
 $wh:rgb(252,252,253);
 body {
     font-family: 'Montserrat', sans-serif;
-    color: $wh;
+    
     
 }
 .content {
@@ -22,6 +22,7 @@ body {
                     font-size: 19px;
                     font-weight: 500;
                     text-transform: uppercase;
+                    color: rgb(252,252,253);
                     
                     span {
                         font-size: 24px;
@@ -84,9 +85,10 @@ body {
             }
         }
         .header__content {
-            padding: 166px 0 140px 0;
+            padding: 166px 0 160px 0;
             display: flex;
             justify-content: space-evenly;
+            color: rgb(252,252,253);
             .header__content-description {
                 max-width: 700px;
                 text-align: center;
@@ -141,5 +143,118 @@ body {
     }
     .header__menu_link {
         margin-left: 15px;  
+    }
+}
+
+.information {
+    .info__title {
+        padding: 100px 0 70px 0;
+        .info__log {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: .2px;
+        }
+    }
+    .info-description {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .info__description {
+            max-width: 570px;
+            .info__description_title {
+                .info__description_log {
+                    font-size: 24px;
+                    font-weight: 600;
+
+                }
+            }
+            .info__text {
+                margin-top: 60px;
+                .text {
+                    font-size: 17px;
+                }
+                .marg {
+                    margin-top: 35px;
+                }
+            }
+            .info__skils {
+                .info__skils_title {
+                    margin-top: 60px;
+                    .info__skils_log {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+                .info__skils_lang {
+                    margin-top: 60px;
+                    .info__lang_list {
+                        display: flex;
+                        justify-content: space-between;
+                        max-width: 370px;
+                        flex-wrap: wrap;
+                        .info__skils_li-lang {
+                            font-size: 16px;
+                            position: relative;
+                            padding-left: 13px;
+                            &.orange::before {
+                                background-color: orange;
+                            }
+                            &.blue::before {
+                                background-color: blue;
+                            }
+                            &.purple::before {
+                                background-color: purple;
+                            }
+                            &.green::before {
+                                background-color: green;
+                            }
+                            &.pink::before {
+                                background-color: rgb(252, 161, 176);
+                            }
+                            &.yellow::before {
+                                background-color: rgb(255, 218, 6);
+                            }
+                            &.blue-1::before {
+                                background-color: rgb(70, 163, 250);
+                            }
+                        }
+                        .info__skils_li-lang::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            top: 3px;
+                            left: 0px;
+                            border-radius: 50px;
+                            
+                        }
+                        
+                        
+                    }
+                    .width {
+                        max-width: 300px;
+                        margin-top: 20px;
+                    }
+                   
+                    
+                }
+                
+                
+            }
+
+        }
+        .info__img {
+
+        }
+    }
+
+}
+@media (max-width: 1025px) {
+    .info__img {
+        img {
+            margin-top: 30px;
+        }
     }
 }
