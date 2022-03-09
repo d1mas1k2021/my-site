@@ -160,6 +160,7 @@ body {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        padding-bottom: 40px;
         .info__description {
             max-width: 570px;
             .info__description_title {
@@ -257,4 +258,86 @@ body {
             margin-top: 30px;
         }
     }
+}
+.works {
+    background-image: url(../img/Contain/Contain-2/background/img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+    .works__title {
+        padding: 100px 0 70px 0;
+        .works__log {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: $wh;
+            
+        }
+    }
+    .works__replay {
+        
+        .slider {
+            display: flex;
+            min-width: 0;
+            
+            
+            
+            .works__work-one {
+                
+                .one-text {
+                    
+                }
+                .work__img {
+                    
+                }
+                
+            }
+            .works__work-two {
+                
+                
+                .work__img {
+                    
+                }
+                
+                .two-text {
+                    
+                }
+            }
+            .work {
+                min-width: 0;
+                max-width: 700px;
+                .work__img{
+                    max-width: 700px;
+                    
+                    &:hover {
+                        
+                    }
+                }
+                .works__text {
+                    margin-top: 70px;
+                    .work__text {
+                        color: $wh;
+                        line-height: 21px;
+                        span {
+                            font-size: 19px;
+                            font-weight: 600;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-arrow{
+    height: 20px;
+}
+
+.slick-slide.slick-active{
+    display: flex;
 }
