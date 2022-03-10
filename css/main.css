@@ -173,9 +173,10 @@ body {
 }
 .information .info-description .info__description .info__text .text {
   font-size: 17px;
+  line-height: 20px;
 }
 .information .info-description .info__description .info__text .marg {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .information .info-description .info__description .info__skils .info__skils_title {
   margin-top: 60px;
@@ -283,16 +284,63 @@ body {
   font-weight: 600;
 }
 
-.slick-list {
-  overflow: hidden;
+.forms {
+  padding: 80px 0;
 }
-
-.slick-arrow {
-  height: 20px;
+.forms .forms__title {
+  margin-bottom: 100px;
 }
-
-.slick-slide.slick-active {
+.forms .forms__title .forms__log {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #111;
+}
+.forms .forms__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.forms .forms__content .forms__text {
+  max-width: 570px;
+}
+.forms .forms__content .forms__text .text {
+  line-height: 20px;
+  font-size: 17px;
+}
+.forms .forms__content .forms__text .marg {
+  margin-top: 50px;
+}
+.forms .forms__content .forms__text .forms__networks {
+  width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+.forms .forms__content .form .form__input .form-input {
+  width: 400px;
+  border-bottom: 1px solid #111;
+  font-size: 18px;
+  padding: 0 0 10px 0;
+}
+.forms .forms__content .form .marg {
+  margin-top: 50px;
+}
+.forms .forms__content .form .form__button {
+  margin-top: 40px;
+}
+.forms .forms__content .form .form__button .form-button {
+  width: 250px;
+  height: 54px;
+  border-radius: 25px;
+  color: #fcfcfd;
+  background-color: #111;
+  font-size: 14px;
 }
