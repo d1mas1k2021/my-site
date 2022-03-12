@@ -147,8 +147,9 @@ body {
 }
 
 .information {
+    padding: 80px 0;
     .info__title {
-        padding: 100px 0 70px 0;
+        padding-bottom: 70px;
         .info__log {
             text-align: center;
             font-size: 30px;
@@ -160,7 +161,7 @@ body {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding-bottom: 40px;
+        
         .info__description {
             max-width: 570px;
             .info__description_title {
@@ -265,10 +266,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 100px 0;
     
     
     .works__title {
-        padding: 100px 0 70px 0;
+        padding-bottom: 70px;
         .works__log {
             font-size: 30px;
             font-weight: 600;
@@ -278,11 +280,19 @@ body {
         }
     }
     .works__replay {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 50px;
         
         .slider {
             display: flex;
             min-width: 0;
-            
+            .tg {
+                padding-left: 140px;
+            }
+            .th {
+                padding-left: 140px;
+            }
             
             
             .works__work-one {
@@ -300,6 +310,7 @@ body {
                 
                 .work__img {
                     
+                    
                 }
                 
                 .two-text {
@@ -308,16 +319,19 @@ body {
             }
             .work {
                 min-width: 0;
-                max-width: 700px;
+                
+                max-width: 1400px;
+                
                 .work__img{
-                    max-width: 700px;
-                    
+                    max-width: 1000px;
+                    object-fit: cover;
                     &:hover {
                         
                     }
                 }
                 .works__text {
                     margin-top: 70px;
+                    max-width: 1000px;
                     .work__text {
                         color: $wh;
                         line-height: 21px;
@@ -336,7 +350,7 @@ body {
 
 
 .forms {
-    padding: 80px 0;
+    padding: 90px 0;
     .forms__title {
         margin-bottom: 100px;
         .forms__log {
@@ -395,5 +409,187 @@ body {
                 }
             }
         }
+    }
+}
+
+
+
+.shop {
+    padding: 90px 0;
+    background-color: #F9F9F9;
+    .shop__title {
+        margin-bottom: 55px;
+        .shop__title-log {
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            color: #111;
+        }
+    }
+    .shop__text {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 90px;
+        .text {
+            line-height: 20px;
+            font-size: 17px;
+            width: 560px;
+            text-align: center;
+
+        }
+    }
+    .shop__card {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .shop__card-site {
+            width: 350px;
+            height: 445px;
+            background-color: #ffffff;
+            box-shadow: 1px 1px 0px 1px #ffffff;
+            align-self: center;
+            border-radius: 20px;
+            
+            .shop__card-text {
+                border-bottom: 1px solid #111;
+                padding: 0 0 30px 0;
+                .shop__var {
+                    font-size: 24px;
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 40px;
+
+                }
+                .shop__card-line {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0 30px 0;
+                    .line {
+                        width: 90px;
+                        height: 2px;
+                        background-color: #111;
+
+                    }
+                }
+                .shop__list-div {
+                    display: flex;
+                    justify-content: center;
+                    .shop__list {
+                    
+                        .shop-li {
+                            position: relative;
+                            font-size: 18px;
+                            line-height: 45px;
+                            max-width: 260px;
+                            display: flex;
+                            
+                        }
+                        .li {
+                            line-height: 22px;
+                        }
+                        
+                        .shop-li::before {
+                            content: url('../img/Contain/Contain_4/arrow_li/arrow.png');
+                            position: relative;
+                            padding-right: 15px;
+                            display: block;
+                            top: 3px;
+                            
+                            
+    
+    
+                        }
+                    }
+                }
+                
+            }
+            .shop__card-money {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 30px 0;
+                .shop__money {
+                    .price {
+                        opacity: .8;
+                        padding-bottom: 7px;
+
+                    }
+                    .money {
+                        font-size: 16px;
+                        
+                    }
+                }
+                .shop__term {
+                    .term {
+                        padding-bottom: 7px;
+
+                    }
+                    .day {
+                        
+                    }
+                }
+                .shop__arrow {
+                    padding-top: 8px;
+                    .link-arrow {
+                        
+                    }
+                }
+
+            }
+            .shop__card-title {
+                background-color: #111;
+                border-radius: 20px 20px 0 0;
+                padding-top: 30px;
+                .shop__var {
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: $wh;
+                    text-align: center;
+
+                }
+                .shop__card-line {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0 35px 0;
+                    .line {
+                        width: 90px;
+                        height: 2px;
+                        background-color: $wh;
+
+                    }
+                }
+            }
+        }
+        .height {
+            height: 540px;
+            .shop__card-text {
+                .shop__list-div {
+                    display: flex;
+                    justify-content: center;
+                    .shop__list {
+                        margin-top: 30px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 1066px) {
+    .one {
+        order: 1;
+    }
+    .height {
+        order: 3;
+        margin-top: 40px;
+    }
+    .three {
+        order: 2;
+    }
+}
+@media (max-width: 716px) {
+    
+    .three {
+        margin-top: 40px;
     }
 }

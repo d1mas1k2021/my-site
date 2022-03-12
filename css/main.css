@@ -142,8 +142,11 @@ body {
     margin-left: 15px;
   }
 }
+.information {
+  padding: 80px 0;
+}
 .information .info__title {
-  padding: 100px 0 70px 0;
+  padding-bottom: 70px;
 }
 .information .info__title .info__log {
   text-align: center;
@@ -159,7 +162,6 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 40px;
 }
 .information .info-description .info__description {
   max-width: 570px;
@@ -249,9 +251,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 100px 0;
 }
 .works .works__title {
-  padding: 100px 0 70px 0;
+  padding-bottom: 70px;
 }
 .works .works__title .works__log {
   font-size: 30px;
@@ -259,21 +262,35 @@ body {
   text-align: center;
   color: #fcfcfd;
 }
+.works .works__replay {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
 .works .works__replay .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-width: 0;
 }
+.works .works__replay .slider .tg {
+  padding-left: 140px;
+}
+.works .works__replay .slider .th {
+  padding-left: 140px;
+}
 .works .works__replay .slider .work {
   min-width: 0;
-  max-width: 700px;
+  max-width: 1400px;
 }
 .works .works__replay .slider .work .work__img {
-  max-width: 700px;
+  max-width: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .works .works__replay .slider .work .works__text {
   margin-top: 70px;
+  max-width: 1000px;
 }
 .works .works__replay .slider .work .works__text .work__text {
   color: #fcfcfd;
@@ -285,7 +302,7 @@ body {
 }
 
 .forms {
-  padding: 80px 0;
+  padding: 90px 0;
 }
 .forms .forms__title {
   margin-bottom: 100px;
@@ -343,4 +360,192 @@ body {
   color: #fcfcfd;
   background-color: #111;
   font-size: 14px;
+}
+
+.shop {
+  padding: 90px 0;
+  background-color: #F9F9F9;
+}
+.shop .shop__title {
+  margin-bottom: 55px;
+}
+.shop .shop__title .shop__title-log {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #111;
+}
+.shop .shop__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 90px;
+}
+.shop .shop__text .text {
+  line-height: 20px;
+  font-size: 17px;
+  width: 560px;
+  text-align: center;
+}
+.shop .shop__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.shop .shop__card .shop__card-site {
+  width: 350px;
+  height: 445px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 0px 1px #ffffff;
+          box-shadow: 1px 1px 0px 1px #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+}
+.shop .shop__card .shop__card-site .shop__card-text {
+  border-bottom: 1px solid #111;
+  padding: 0 0 30px 0;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__var {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__card-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 30px 0;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__card-line .line {
+  width: 90px;
+  height: 2px;
+  background-color: #111;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__list-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__list-div .shop__list .shop-li {
+  position: relative;
+  font-size: 18px;
+  line-height: 45px;
+  max-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__list-div .shop__list .li {
+  line-height: 22px;
+}
+.shop .shop__card .shop__card-site .shop__card-text .shop__list-div .shop__list .shop-li::before {
+  content: url("../img/Contain/Contain_4/arrow_li/arrow.png");
+  position: relative;
+  padding-right: 15px;
+  display: block;
+  top: 3px;
+}
+.shop .shop__card .shop__card-site .shop__card-money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 30px 0;
+}
+.shop .shop__card .shop__card-site .shop__card-money .shop__money .price {
+  opacity: 0.8;
+  padding-bottom: 7px;
+}
+.shop .shop__card .shop__card-site .shop__card-money .shop__money .money {
+  font-size: 16px;
+}
+.shop .shop__card .shop__card-site .shop__card-money .shop__term .term {
+  padding-bottom: 7px;
+}
+.shop .shop__card .shop__card-site .shop__card-money .shop__arrow {
+  padding-top: 8px;
+}
+.shop .shop__card .shop__card-site .shop__card-title {
+  background-color: #111;
+  border-radius: 20px 20px 0 0;
+  padding-top: 30px;
+}
+.shop .shop__card .shop__card-site .shop__card-title .shop__var {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fcfcfd;
+  text-align: center;
+}
+.shop .shop__card .shop__card-site .shop__card-title .shop__card-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0 35px 0;
+}
+.shop .shop__card .shop__card-site .shop__card-title .shop__card-line .line {
+  width: 90px;
+  height: 2px;
+  background-color: #fcfcfd;
+}
+.shop .shop__card .height {
+  height: 540px;
+}
+.shop .shop__card .height .shop__card-text .shop__list-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.shop .shop__card .height .shop__card-text .shop__list-div .shop__list {
+  margin-top: 30px;
+}
+
+@media (max-width: 1066px) {
+  .one {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .height {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 40px;
+  }
+
+  .three {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+@media (max-width: 716px) {
+  .three {
+    margin-top: 40px;
+  }
 }

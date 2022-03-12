@@ -26,13 +26,24 @@ linkPortfolio.addEventListener('click', e => {
     })
 })
 // Магазин
-
+const shop = document.querySelector('.shop')
 linkShop.addEventListener('click', e => {
     e.preventDefault()
-    summary.scrollIntoView({
+    shop.scrollIntoView({
         block: 'center',
         inline: 'center',
         behavior: 'smooth'
     })
 })
 
+
+
+$(document).ready(function() {
+    $('.slider').slick({
+        arrows: false,
+        infinite: true,
+        dots: true,
+        infinite:false,
+        slidesToScroll: 1
+    })
+})
