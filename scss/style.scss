@@ -17,6 +17,7 @@ body {
             justify-content: space-evenly;
             height: 90px;
             align-items: center;
+            flex-wrap: wrap;
             .header__menu_logo {
                 .logo{
                     font-size: 19px;
@@ -38,6 +39,7 @@ body {
                 .header__menu_list {
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                     .list {
                         .link {
                             
@@ -85,7 +87,7 @@ body {
             }
         }
         .header__content {
-            padding: 166px 0 160px 0;
+            padding: 160px 0 160px 0;
             display: flex;
             justify-content: space-evenly;
             color: rgb(252,252,253);
@@ -133,7 +135,7 @@ body {
     
 }
 
-@media (max-width:  535px) {
+@media (max-width:  689px) {
     .header__menu_link-img  {
         display: none;
         
@@ -145,6 +147,13 @@ body {
         margin-left: 15px;  
     }
 }
+@media (max-width: 320px) {
+    .link {
+        text-align: center;
+    }
+}
+
+
 
 .information {
     padding: 80px 0;
@@ -249,6 +258,9 @@ body {
 
         }
         .info__img {
+            img {
+                max-width: 100%;
+            }
 
         }
     }
@@ -261,6 +273,17 @@ body {
         }
     }
 }
+@media (max-width: 425px) {
+    .info__description_log {
+        text-align: center;
+    }
+    .info__skils_log {
+        text-align: center;
+    }
+    
+}
+
+
 .works {
     background-image: url(../img/Contain/Contain-2/background/img.png);
     background-repeat: no-repeat;
@@ -280,19 +303,14 @@ body {
         }
     }
     .works__replay {
-        max-width: 1400px;
+        
         margin: 0 auto;
-        padding: 0 50px;
+        
         
         .slider {
             display: flex;
-            min-width: 0;
-            .tg {
-                padding-left: 140px;
-            }
-            .th {
-                padding-left: 140px;
-            }
+            
+           
             
             
             .works__work-one {
@@ -318,9 +336,11 @@ body {
                 }
             }
             .work {
-                min-width: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 
-                max-width: 1400px;
+                
                 
                 .work__img{
                     max-width: 1000px;
@@ -346,6 +366,41 @@ body {
         }
     }
 }
+@media (max-width: 986px) {
+    #scr{
+        max-width: 700px;
+    }
+    .work__text {
+        max-width: 700px;
+    }
+}
+@media (max-width: 425px) {
+    #scr{
+        max-width: 400px;
+    }
+    .work__text {
+        max-width: 400px;
+    }
+}
+@media (max-width: 375px) {
+    #scr{
+        max-width: 350px;
+    }
+    .work__text {
+        max-width: 350px;
+    }
+}
+@media (max-width: 320px) {
+    #scr{
+        max-width: 320px;
+    }
+    .work__text {
+        max-width: 320px;
+    }
+}
+
+
+
 
 
 
@@ -363,6 +418,7 @@ body {
     .forms__content {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap-reverse;
         .forms__text {
             max-width: 570px;
             .text {
@@ -373,21 +429,31 @@ body {
             .marg {
                 margin-top: 50px;
             }
-            .forms__networks {
-                width: 125px;
-                display: flex;
-                justify-content: space-between;
-                margin-top: 40px;
-                
+            .form-flex {
+                .forms__networks {
+                    width: 125px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 40px;
+                    .github {
+                        img {
+                            width: 35px;
+                        }
+                    }
+                    
+                }
             }
+            
         }
         .form {
-            .form__input {
+            .form__inputs {
+                display: flex;
                 .form-input {
                     width: 400px;
                     border-bottom: 1px solid #111;
                     font-size: 18px;
                     padding: 0 0 10px 0;
+                    
                     
 
                 }
@@ -396,7 +462,7 @@ body {
             .marg {
                 margin-top: 50px;
             }
-            .form__button {
+            .form__buttons {
                 margin-top: 40px;
                 .form-button {
                     width: 250px;
@@ -412,7 +478,26 @@ body {
     }
 }
 
+@media (max-width: 969px) {
+    .form__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .form-flex {
+        display: flex;
+        justify-content: center;
+    }
+    .forms__text {
+        margin-top: 30px;
+    }
+    
+}
 
+@media (max-width: 375px) {
+    #form-input {
+        width: 300px;
+    }
+}
 
 .shop {
     padding: 90px 0;

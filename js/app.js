@@ -36,6 +36,17 @@ linkShop.addEventListener('click', e => {
     })
 })
 
+// button
+const button = document.querySelector('.header__content-button')
+button.addEventListener('click', e => {
+    e.preventDefault()
+    summary.scrollIntoView({
+        block: 'center',
+        inline: 'center',
+        behavior: 'smooth'
+    })
+})
+
 
 
 $(document).ready(function() {
@@ -44,6 +55,7 @@ $(document).ready(function() {
         infinite: true,
         dots: true,
         infinite:false,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        
     })
 })

@@ -19,6 +19,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .content .header .header__menu .header__menu_logo .logo {
   font-size: 19px;
@@ -45,6 +47,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .content .header .header__menu .header__menu_link .header__menu_list .list .link {
   font-size: 17px;
@@ -83,7 +87,7 @@ body {
   padding-left: 10px;
 }
 .content .header .header__content {
-  padding: 166px 0 160px 0;
+  padding: 160px 0 160px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +133,7 @@ body {
   background-position: 191px 19px;
   padding-right: 15px;
 }
-@media (max-width: 535px) {
+@media (max-width: 689px) {
   .header__menu_link-img {
     display: none;
   }
@@ -140,6 +144,11 @@ body {
 
   .header__menu_link {
     margin-left: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .link {
+    text-align: center;
   }
 }
 .information {
@@ -241,9 +250,22 @@ body {
   max-width: 300px;
   margin-top: 20px;
 }
+.information .info-description .info__img img {
+  max-width: 100%;
+}
+
 @media (max-width: 1025px) {
   .info__img img {
     margin-top: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .info__description_log {
+    text-align: center;
+  }
+
+  .info__skils_log {
+    text-align: center;
   }
 }
 .works {
@@ -263,25 +285,24 @@ body {
   color: #fcfcfd;
 }
 .works .works__replay {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 50px;
 }
 .works .works__replay .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 0;
-}
-.works .works__replay .slider .tg {
-  padding-left: 140px;
-}
-.works .works__replay .slider .th {
-  padding-left: 140px;
 }
 .works .works__replay .slider .work {
-  min-width: 0;
-  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .works .works__replay .slider .work .work__img {
   max-width: 1000px;
@@ -301,6 +322,42 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 986px) {
+  #scr {
+    max-width: 700px;
+  }
+
+  .work__text {
+    max-width: 700px;
+  }
+}
+@media (max-width: 425px) {
+  #scr {
+    max-width: 400px;
+  }
+
+  .work__text {
+    max-width: 400px;
+  }
+}
+@media (max-width: 375px) {
+  #scr {
+    max-width: 350px;
+  }
+
+  .work__text {
+    max-width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  #scr {
+    max-width: 320px;
+  }
+
+  .work__text {
+    max-width: 320px;
+  }
+}
 .forms {
   padding: 90px 0;
 }
@@ -320,6 +377,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 .forms .forms__content .forms__text {
   max-width: 570px;
@@ -331,7 +390,7 @@ body {
 .forms .forms__content .forms__text .marg {
   margin-top: 50px;
 }
-.forms .forms__content .forms__text .forms__networks {
+.forms .forms__content .forms__text .form-flex .forms__networks {
   width: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,7 +400,15 @@ body {
           justify-content: space-between;
   margin-top: 40px;
 }
-.forms .forms__content .form .form__input .form-input {
+.forms .forms__content .forms__text .form-flex .forms__networks .github img {
+  width: 35px;
+}
+.forms .forms__content .form .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.forms .forms__content .form .form__inputs .form-input {
   width: 400px;
   border-bottom: 1px solid #111;
   font-size: 18px;
@@ -350,10 +417,10 @@ body {
 .forms .forms__content .form .marg {
   margin-top: 50px;
 }
-.forms .forms__content .form .form__button {
+.forms .forms__content .form .form__buttons {
   margin-top: 40px;
 }
-.forms .forms__content .form .form__button .form-button {
+.forms .forms__content .form .form__buttons .form-button {
   width: 250px;
   height: 54px;
   border-radius: 25px;
@@ -362,6 +429,34 @@ body {
   font-size: 14px;
 }
 
+@media (max-width: 969px) {
+  .form__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .form-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .forms__text {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 375px) {
+  #form-input {
+    width: 300px;
+  }
+}
 .shop {
   padding: 90px 0;
   background-color: #F9F9F9;
