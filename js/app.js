@@ -10,8 +10,8 @@ const summary = document.querySelector('.information')
 linkSummary.addEventListener('click', e => {
     e.preventDefault()
     summary.scrollIntoView({
-        block: 'center',
-        inline: 'center',
+        block: 'start',
+        inline: 'nearest',
         behavior: 'smooth'
     })
 })
@@ -20,8 +20,8 @@ const portfolio = document.querySelector('.works')
 linkPortfolio.addEventListener('click', e => {
     e.preventDefault()
     portfolio.scrollIntoView({
-        block: 'center',
-        inline: 'center',
+        block: 'start',
+        inline: 'nearest',
         behavior: 'smooth'
     })
 })
@@ -30,8 +30,8 @@ const shop = document.querySelector('.shop')
 linkShop.addEventListener('click', e => {
     e.preventDefault()
     shop.scrollIntoView({
-        block: 'center',
-        inline: 'center',
+        block: 'start',
+        inline: 'nearest',
         behavior: 'smooth'
     })
 })
@@ -41,8 +41,8 @@ const button = document.querySelector('.header__content-button')
 button.addEventListener('click', e => {
     e.preventDefault()
     summary.scrollIntoView({
-        block: 'center',
-        inline: 'center',
+        block: 'start',
+        inline: 'nearest',
         behavior: 'smooth'
     })
 })
@@ -57,5 +57,51 @@ $(document).ready(function() {
         infinite:false,
         slidesToScroll: 1,
         
+    })
+})
+
+// footer
+// Navigation
+const linkGlav2 = document.querySelectorAll('.link-li .link')[0]
+const linkSummary2 = document.querySelectorAll('.link-li .link')[1]
+const linkPortfolio2 = document.querySelectorAll('.link-li .link')[3]
+const linkShop2 = document.querySelectorAll('.link-li .link')[2]
+
+
+// Главная
+const header = document.querySelector('.header')
+linkGlav2.addEventListener('click', e => {
+    e.preventDefault()
+    header.scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'smooth'
+    })
+})
+// Резюме
+linkSummary2.addEventListener('click', e => {
+    e.preventDefault()
+    summary.scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'smooth'
+    })
+})
+// Портфолио
+linkPortfolio2.addEventListener('click', e => {
+    e.preventDefault()
+    portfolio.scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'smooth'
+    })
+})
+// Магазин
+linkShop2.addEventListener('click', e => {
+    e.preventDefault()
+    shop.scrollIntoView({
+        block: 'start',
+        inline: 'nearest',
+        behavior: 'smooth'
     })
 })

@@ -114,7 +114,7 @@ body {
                         width: 252px;
                         height: 50px;
                         background-color: $wh;
-                        color: #111;
+                        color: #000;
                         font-size: 14px;
                         border-radius: 40px;
                         font-weight: 500;
@@ -366,6 +366,7 @@ body {
         }
     }
 }
+
 @media (max-width: 986px) {
     #scr{
         max-width: 700px;
@@ -412,7 +413,7 @@ body {
             font-size: 30px;
             font-weight: 600;
             text-align: center;
-            color: #111;
+            color: #000;
         }
     }
     .forms__content {
@@ -450,7 +451,7 @@ body {
                 display: flex;
                 .form-input {
                     width: 400px;
-                    border-bottom: 1px solid #111;
+                    border-bottom: 1px solid #000;
                     font-size: 18px;
                     padding: 0 0 10px 0;
                     
@@ -469,7 +470,7 @@ body {
                     height: 54px;
                     border-radius: 25px;
                     color: $wh;
-                    background-color: #111;
+                    background-color: #000;
                     font-size: 14px;
                     
                 }
@@ -508,7 +509,7 @@ body {
             font-size: 30px;
             font-weight: 600;
             text-align: center;
-            color: #111;
+            color: #000;
         }
     }
     .shop__text {
@@ -536,7 +537,7 @@ body {
             border-radius: 20px;
             
             .shop__card-text {
-                border-bottom: 1px solid #111;
+                border-bottom: 1px solid #000;
                 padding: 0 0 30px 0;
                 .shop__var {
                     font-size: 24px;
@@ -552,7 +553,7 @@ body {
                     .line {
                         width: 90px;
                         height: 2px;
-                        background-color: #111;
+                        background-color: #000;
 
                     }
                 }
@@ -621,7 +622,7 @@ body {
 
             }
             .shop__card-title {
-                background-color: #111;
+                background-color: #000;
                 border-radius: 20px 20px 0 0;
                 padding-top: 30px;
                 .shop__var {
@@ -676,5 +677,103 @@ body {
     
     .three {
         margin-top: 40px;
+    }
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    padding: 160px 0;
+    .footer__content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: $wh;
+        .footer__logo {
+            .logo {
+                font-size: 19px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: rgb(252,252,253);
+                
+                span {
+                    font-size: 24px;
+                    text-decoration: underline;
+                    text-decoration-thickness: 2px;
+                    color: rgb(250, 183, 0);
+                }
+            }
+        }
+        .footer__navigation {
+            
+            .footer__title {
+                .footer__title-log {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    
+
+                }
+                .footer__line {
+                    width: 70px;
+                    height: 1px;
+                    background-color: $wh;
+                    margin-top: 5px;
+
+                }
+            }
+            .footer__list {
+                margin-top: 20px;
+                .footer__list {
+                    .link-li {
+                        .link {
+                            color: $wh;
+                            font-size: 17px;
+                            line-height: 26px;
+                            opacity: .7;
+                            transition: all 0.3s;
+                        }
+                        .link:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__networks {
+            .footer__title {
+                .footer__title-log {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                    font-weight: 500;
+                    
+
+                }
+                .footer__line {
+                    width: 70px;
+                    height: 1px;
+                    background-color: $wh;
+                    margin-top: 5px;
+
+                }
+            }
+            .footer__networks-card {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                .footer__list {
+                    .footer-li {
+                        a {
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                    .marg {
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+        }
     }
 }
