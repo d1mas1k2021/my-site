@@ -53,7 +53,7 @@ $(document).ready(function() {
     $('.slider').slick({
         arrows: false,
         infinite: true,
-        dots: true,
+        dots: false,
         infinite:false,
         slidesToScroll: 1,
         
@@ -105,3 +105,37 @@ linkShop2.addEventListener('click', e => {
         behavior: 'smooth'
     })
 })
+
+
+// Popup
+
+const popup = document.querySelector('.popup')
+const popupBody = document.querySelector('.popup__body')
+const closePopup = document.querySelector('.popup__close')
+const registerLink = document.querySelector('.header__register_link')
+
+// Открытие окна
+registerLink.addEventListener('click', el => {
+    el.preventDefault()
+    popup.classList.add('popup__active')
+    popupBody.classList.add('popup__body-active')
+
+})
+
+// Закрытие окна
+closePopup.addEventListener('click', el => {
+    el.preventDefault()
+    popup.classList.remove('popup__active')
+    popupBody.classList.remove('popup__body-active')
+
+})
+
+// Закрытие на фон
+document.addEventListener('click', el => {
+    if (el.target === popup) {
+        popup.classList.remove('popup__active')
+        popupBody.classList.remove('popup__body-active')
+    }
+})
+
+
