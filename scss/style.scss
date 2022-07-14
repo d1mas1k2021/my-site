@@ -169,7 +169,7 @@ body {
 
 
 .information {
-    padding: 80px 0;
+    padding: 80px 15px;
 
     .info__title {
         padding-bottom: 70px;
@@ -470,7 +470,7 @@ body {
 
         .forms__text {
             max-width: 570px;
-
+            padding: 0 15px;
             .text {
                 line-height: 20px;
                 font-size: 17px;
@@ -553,7 +553,7 @@ body {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 465px) {
     #form-input {
         width: 300px;
     }
@@ -845,7 +845,16 @@ body {
     }
 }
 
-
+@media (max-width: 425px) {
+    .tab__button {
+        font-size: 16px !important;
+    }
+}
+@media (max-width: 374px) {
+    .tab__button {
+        font-size: 15px !important;
+    }
+}
 
 
 
@@ -853,13 +862,10 @@ body {
 .footer {
     background-color: rgb(0, 0, 0);
     padding: 160px 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     color: $wh;
 
     .footer__content {
-        width: 60%;
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
